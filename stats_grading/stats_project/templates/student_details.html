@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+.link_button-b{
+        display: inline;
+        background: #4E9CAF;
+        padding: 9px;
+        position: absolute;
+        right: 150px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+}
+.link_button-c{
+        display: inline;
+        background: #4E9CAF;
+        padding: 9px;
+        position: absolute;
+        right: 60px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+}
+#banner_homepage{
+    border: 30px;
+    border-style: dotted
+    border-radius: 5px
+    border-width: 20px
+    padding:20px;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+    </style>
+</head>
+   <h1> Please enter your details and click on the submit button to see your project questions</h1>
+<body>
+         <form  action="." method="post">
+         {% csrf_token %}
+         <table>
+           {{form.as_table}}
+         </table>
+           <input type="submit" value="Submit">
+         </form>
+</body>
+</head>
+</html>
+
+

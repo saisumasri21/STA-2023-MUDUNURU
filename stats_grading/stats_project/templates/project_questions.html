@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table,th,td{
+    text-align:left;
+}
+    </style>
+</head>
+<body>
+     <div id="customer_info_div" align="left" height="10px">
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+        {{ form.as_table }}
+        </table>
+        <input id="cust_info_btn" type="submit" value="Submit">
+    </form>
+    </div>
+</form>
+</body>
+</html>
