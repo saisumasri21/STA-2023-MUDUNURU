@@ -1,5 +1,5 @@
-# STA-2023-MUDUNURU
-STA-2023 Mudunuru
+# STATEST-0.0
+STATEST-0.0
 
 # Purpose of the project
 Professors at universities should assign practical projects to students every semester.These projects may be course specific. 
